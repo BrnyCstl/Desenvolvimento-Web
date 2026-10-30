@@ -1,0 +1,52 @@
+body{
+    font-family: Poppins;
+    background-color: bisque;
+    margin: 0;
+}
+
+#inicio{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: #964b00;
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#inicio a{
+    text-decoration: none   ;
+    color:aliceblue;
+}
+
+#inicio a:hover{
+    font-size: 20px;
+}
+
+.cards{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+}
+
+img{
+    width: 300px;
+    border-radius: 30px;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
