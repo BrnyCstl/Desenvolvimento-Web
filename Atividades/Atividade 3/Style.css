@@ -1,6 +1,11 @@
+html {
+    scroll-padding-top: 120px;
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: Poppins;
-    background-color: bisque;
+    background-color: rgb(244, 203, 154);
     margin: 0;
 }
 
@@ -10,9 +15,11 @@ body{
     z-index: 3;
     background-color: #964b00;
     width: 100%;
+    height: 40px;
     padding: 4px;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #inicio a{
@@ -22,6 +29,11 @@ body{
 
 #inicio a:hover{
     font-size: 20px;
+    color: rgb(240, 248, 255, 0.5);
+}
+#logo{
+    border-radius: 50%;
+    width: 40px;
 }
 
 .cards{
@@ -46,7 +58,32 @@ img{
 
 main{
     margin-top: 50px;
+
+}
+
+.nossa-cantina{
+    margin-left:50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nossa-cantina p{
+    margin-top: 0;
+}
+
+#produtos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
+#fontes{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#fontes a{
+    color: black;
+}
