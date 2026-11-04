@@ -1,8 +1,113 @@
-body{
+body {
     font-family: Poppins;
+    background-color: #D1AE84;
+    margin: 0;
+    padding: 0;
 }
 
-#lugares{
+header {
+    background-color: #574837;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    margin: 30px;
+}
+
+#lugares {
+    animation: aparecer 1.5s ease-out;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.fontes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4cb9a;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+}
+
+.fontes:hover {
+    box-shadow: 5px 5px #574837;
+}
+
+.fontes h1 {
+    color: #574837;
+    margin-top: 5px;
+}
+
+.fontes p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fontes img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+@keyframes aparecer {
+    from {
+        transform: translateY(600px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    main {
+        margin: 15px;
+    }
+
+    #lugares {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .fontes {
+        padding: 15px;
+    }
+
+    .fontes img {
+        width: 100%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
 }
