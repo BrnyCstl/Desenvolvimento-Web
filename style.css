@@ -25,3 +25,15 @@ section {
     color: black;
     border-radius: 30px;
 }
+
+@media (max-width: 600px) {
+    section {
+        width: 90%;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
