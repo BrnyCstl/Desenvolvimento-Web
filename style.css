@@ -9,6 +9,11 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Poppins;
+    flex-direction: column;
+}
+
+div{
+    display: flex;
 }
 
 section {
@@ -16,6 +21,11 @@ section {
     margin: 5px;
     padding: 0;
     border-radius: 30px;
+}
+
+.separado{
+    display: flex;
+    flex-direction: row;
 }
 
 .link-section a {
